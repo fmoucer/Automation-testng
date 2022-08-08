@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suitepractice" parallel="tests" thread-count="6">
+<listeners>
+<listener class-name="Practice2Selenium.GetAjobTestng.listners"></listener>
+
+</listeners>
+
+<test name ="regressionOfChrome">
+<parameter name="browser" value="chrome"></parameter>
+<parameter name="WebSite" value="https://www.facebook.com"></parameter>
+<classes>
+<!-- <class name="Practice2Selenium.GetAjobTestng.AmazonSignIn1"></class>
+<class name="Practice2Selenium.GetAjobTestng.FacebookLogIn"></class>-->
+<class name="Practice2Selenium.GetAjobTestng.FindElements"></class>
+ 
+</classes>
+</test>
+
+<test name ="regressionOfOpera">
+<parameter name="browser" value="opera"></parameter>
+<parameter name="WebSite" value="https://www.facebook.com"></parameter>
+
+<classes>
+<!--<class name="Practice2Selenium.GetAjobTestng.AmazonSignIn1"></class>
+ <class name="Practice2Selenium.GetAjobTestng.FacebookLogIn"></class>-->
+</classes>
+
+</test>
+
+
+</suite>
